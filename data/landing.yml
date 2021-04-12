@@ -1,0 +1,10 @@
+---
+enable: true
+topTitle: Dynamic Admission at your fingertips
+content: >
+  # Kubewarden
+  kubewarden gives you the flexibility and power of WebAssembly
+  (Wasm) to write and distribute admission and mutation webhooks -- as
+  easy as it gets.
+image: images/kubernetes.png
+
