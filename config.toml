@@ -5,12 +5,12 @@ title = "Hypper"
 disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404"]
 
 [[menu.main]]
-name = "Documentation"
-url = "https://docs.hypper.io/"
-weight = 1
+
 
 [params]
 # rename when the logo is updated, so we indirectly also invalidate caches
-logo = "images/hypper-logo.png"
+logo = "images/hypper-logo-header.png"
 githubLink = "https://github.com/rancher-sandbox/hypper"
-bookUrl = "https://docs.hypper.io/"
+docsLink = "https://docs.hypper.io/"
+css = ["css/custom.css"]
+favicon = "images/favicon.ico"
