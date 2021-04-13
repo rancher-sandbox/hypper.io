@@ -1,4 +1,4 @@
-baseURL = "https://hypper.io/"
+baseURL = "https://rancher-sandbox.github.io/hypper.io/"
 languageCode = "en-us"
 theme = "portio-hugo"
 title = "Hypper"
