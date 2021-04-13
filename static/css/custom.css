@@ -7,3 +7,7 @@
     background-color: #d23306;
     border-color: #d23306;
 }
+
+.hero#home{
+    padding-bottom: 0;  /* No need to have padding between home and sections */
+}
