@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="58px" height="58px" viewBox="0 0 58 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>028 - lodgings</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="028---lodgings" transform="translate(0.000000, -1.000000)" fill-rule="nonzero">
+            <path d="M57.4,27.56 L31.91,2.6 L31.18,1.89 C29.9702682,0.699984447 28.0297318,0.699984447 26.82,1.89 L26.09,2.6 L0.6,27.56 C0.216307624,27.9348506 -7.54220278e-06,28.4485927 -7.54220278e-06,28.985 C-7.54220278e-06,29.5214073 0.216307624,30.0351494 0.6,30.41 C1.41048507,31.1967134 2.69951493,31.1967134 3.51,30.41 L3.97,29.96 L4,30 L4,59 L54,59 L54,30 L54.03,29.96 L54.49,30.41 C55.2991389,31.200026 56.5908611,31.200026 57.4,30.41 C57.7836924,30.0351494 58.0000075,29.5214073 58.0000075,28.985 C58.0000075,28.4485927 57.7836924,27.9348506 57.4,27.56 Z" id="Shape" fill="#7F6E5D"></path>
+            <path d="M57.4,30.41 C56.5908611,31.200026 55.2991389,31.200026 54.49,30.41 L54.03,29.96 L41.4,17.59 L29,5.45 L16.6,17.59 L3.97,29.96 L3.51,30.41 C2.69951493,31.1967134 1.41048507,31.1967134 0.6,30.41 C0.216307624,30.0351494 -7.54220278e-06,29.5214073 -7.54220278e-06,28.985 C-7.54220278e-06,28.4485927 0.216307624,27.9348506 0.6,27.56 L26.09,2.6 L26.82,1.89 C28.0297318,0.699984447 29.9702682,0.699984447 31.18,1.89 L31.91,2.6 L57.4,27.56 C57.7836924,27.9348506 58.0000075,28.4485927 58.0000075,28.985 C58.0000075,29.5214073 57.7836924,30.0351494 57.4,30.41 Z" id="Shape" fill="#AF8066"></path>
+            <polygon id="Shape" fill="#7F6E5D" points="41.4 17.59 41 18 29 30 17 18 16.6 17.59 29 5.45"></polygon>
+            <polygon id="Shape" fill="#CBB292" points="29 30 4 30 3.97 29.96 16.6 17.59 17 18"></polygon>
+            <polygon id="Shape" fill="#CBB292" points="54.03 29.96 54 30 29 30 41 18 41.4 17.59"></polygon>
+            <rect id="Rectangle-path" fill="#CB9080" x="22" y="48" width="14" height="11"></rect>
+            <rect id="Rectangle-path" fill="#B0D3F0" x="29" y="39" width="7" height="9"></rect>
+            <rect id="Rectangle-path" fill="#90BAE1" x="22" y="39" width="7" height="9"></rect>
+            <rect id="Rectangle-path" fill="#AF8066" x="19" y="35" width="20" height="4" rx="1"></rect>
+            <path d="M14,46 L14,52 C13.9983526,52.5516009 13.5516009,52.9983526 13,53 L4,53 L4,46 L14,46 Z" id="Shape" fill="#CB9080"></path>
+            <rect id="Rectangle-path" fill="#B0D3F0" x="4" y="39" width="5" height="7"></rect>
+            <rect id="Rectangle-path" fill="#90BAE1" x="9" y="39" width="5" height="7"></rect>
+            <path d="M15,36 L15,38 C14.9983526,38.5516009 14.5516009,38.9983526 14,39 L4,39 L4,35 L14,35 C14.5516009,35.0016474 14.9983526,35.4483991 15,36 Z" id="Shape" fill="#AF8066"></path>
+            <rect id="Rectangle-path" fill="#B0D3F0" x="49" y="39" width="5" height="7"></rect>
+            <path d="M54,46 L54,53 L45,53 C44.4483991,52.9983526 44.0016474,52.5516009 44,52 L44,46 L54,46 Z" id="Shape" fill="#CB9080"></path>
+            <path d="M54,35 L54,39 L44,39 C43.4483991,38.9983526 43.0016474,38.5516009 43,38 L43,36 C43.0016474,35.4483991 43.4483991,35.0016474 44,35 L54,35 Z" id="Shape" fill="#AF8066"></path>
+            <rect id="Rectangle-path" fill="#90BAE1" x="44" y="39" width="5" height="7"></rect>
+        </g>
+    </g>
+</svg>
