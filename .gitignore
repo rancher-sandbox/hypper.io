@@ -1,2 +1,4 @@
 /public
 /ebug
+.DS_Store
+resources/_gen
