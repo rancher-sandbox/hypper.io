@@ -11,6 +11,6 @@ disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robots
 # rename when the logo is updated, so we indirectly also invalidate caches
 logo = "images/hypper-logo-header.png"
 githubLink = "https://github.com/rancher-sandbox/hypper"
-docsLink = "https://github.com/rancher-sandbox/hypper/blob/main/docs/SUMMARY.md"
+docsLink = "https://rancher-sandbox.github.io/hypper/"
 css = ["css/custom.css"]
 favicon = "images/favicon.ico"
