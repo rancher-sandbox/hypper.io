@@ -56,10 +56,19 @@ date: 2021-04-16T13:28:46+02:00
 <hr />
 <section class="wrap">
   <h2>How it Works</h2>
-  <p class="font-weight-light">Hypper installs each chart, including those specificed for Hypper to manage through chart annotations, with their own release record as an independent release.
+  <div class="grid-two">
+  <div style="align-items: center; display: flex;"><p class="font-weight-light">Hypper installs each chart, including Hypper managed dependencies specified via annotations, with their own release record as an independent release.
       Hypper communicates with the Kubernetes API the same way Helm does.
-  </p>
-  <img src="../images/Arch_1.svg" alt="{{ .Site.Title }}">
+  </p></div>
+  <div><img src="../images/Arch_1.svg" alt="Hypper Architecture"></div>
+  </div>
+  <br><br><br>
+  <div class="grid-two">
+    <div><img src="../images/source-layout.svg" alt="Hypper Source Layout"></div>
+    <div style="align-items: center; display: flex;"><p class="font-weight-light">Hypper is built on top of the Helm SDK.
+      This enables it to take advantage of templates, chart repositories, provenance files (used for security), and more using the exact same code that Helm does.
+    </p></div>
+    </div>
 </section>
 
 <section class="get-started">
