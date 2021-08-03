@@ -1,12 +1,130 @@
-<!doctype html><html lang=en-us><head><meta name=generator content="Hugo 0.84.0"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><title>Hypper: Kubernetes package management for cluster admins</title><link rel=stylesheet type=text/css href=/sass/main.min.css?1624543171><script async defer src=https://buttons.github.io/buttons.js></script><script type=text/javascript src=//cdn.bizible.com/scripts/bizible.js async></script></head><body><header><div class=sub-header><a class=navbar-brand href><img src=../images/logo-hypper.svg alt=hypper></a><nav><ul class=menu><li><a href=https://github.com/rancher-sandbox/hypper/tree/main/docs class="btn no-bg" target=_blank>Docs</a></li><li><a href=https://github.com/rancher-sandbox/hypper class=btn><img src=../images/icon-github.svg><span>Github</span></a></li></ul></nav></div></header><main><div><section class=intro><div class=bg-primary><div class="wrap grid-two"><div><h1>Kubernetes package management for cluster admins</h1><h4>Hypper makes it easy to install and manage cluster level applications while leveraging Helm and charts</h4><a class=btn href=https://github.com/rancher-sandbox/hypper/blob/main/docs/user/tutorials/installing.md>Install Hypper</a></div></div></div><div class=folder><h4>Great For</h4><div class="bg-light grid-dynamic text-center"><h5>Installing shared dependencies</h5><h5>Using known names and namespaces</h5><h5>Managing system level dependencies</h5><h5>Opinionated cluster level charts</h5></div></div></section><section class=wrap><h2>What is Hypper?</h2><p class="text-center font-weight-light">Hypper is a Kubernetes package manager designed for cluster admins working with a cluster wide scope.
+<!doctype html><html lang=en-us>
+<head>
+<meta name=generator content="Hugo 0.86.1">
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<title>Hypper: Kubernetes package management for cluster admins</title>
+<link rel=stylesheet type=text/css href=/sass/main.min.css?1627998237>
+<script async defer src=https://buttons.github.io/buttons.js></script>
+<script type=text/javascript src=//cdn.bizible.com/scripts/bizible.js async></script>
+</head>
+<body>
+<header>
+<div class=sub-header>
+<a class=navbar-brand href>
+<img src=../images/logo-hypper.svg alt=hypper>
+</a>
+<nav>
+<ul class=menu>
+<li><a href=https://rancher-sandbox.github.io/hypper/ class="btn no-bg" target=_blank>Docs</a></li>
+<li><a href=https://github.com/rancher-sandbox/hypper class=btn><img src=../images/icon-github.svg><span>Github</span></a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main>
+<div>
+<section class=intro>
+<div class=bg-primary>
+<div class="wrap grid-two">
+<div>
+<h1>Kubernetes package management for cluster admins</h1>
+<h4>Hypper makes it easy to install and manage cluster level applications while leveraging Helm and charts</h4>
+<a class=btn href=https://rancher-sandbox.github.io/hypper/user/tutorials/installing.html>Install Hypper</a>
+</div>
+</div>
+</div>
+<div class=folder>
+<h4>Great For</h4>
+<div class="bg-light grid-dynamic text-center">
+<h5>Installing shared dependencies</h5>
+<h5>Using known names and namespaces</h5>
+<h5>Managing system level dependencies</h5>
+<h5>Opinionated cluster level charts</h5>
+</div>
+</div>
+</section>
+<section class=wrap>
+<h2>What is Hypper?</h2>
+<p class="text-center font-weight-light">Hypper is a Kubernetes package manager designed for cluster admins working with a cluster wide scope.
 It is designed with managing cluster services in mind. This includes system service dependencies and using known locations to install workloads.
-With Hypper you can start with Helm charts and layer in features as needed.</p></section><hr><section class=wrap><h2>Why Hypper?</h2><div class=grid-three><div><h3>Built on Helm</h3><p class=font-weight-light>Being built on the <a href=https://helm.sh/docs/topics/advanced/#go-sdk>Helm SDK</a>, Hypper inherits the functionality developed by upstream Helm. This means you can start with your existing charts and extend them for more features.</p></div><div><h3>For Cluster Admins</h3><p class=font-weight-light>Hypper directly targets features for cluster admins. This complements Helm which places cluster admin specific features as out of scope.</p></div><div><h3>Curated Chart Repositories</h3><p class=font-weight-light>You can create chart repositories with services designed to be managed separately while closely working together.</p></div></div></section><hr><section class=wrap><h2>How it Works</h2><div class=grid-two><div style=align-items:center;display:flex><p class=font-weight-light>Hypper installs each chart, including Hypper managed dependencies specified via annotations, with their own release record as an independent release.
-Hypper communicates with the Kubernetes API the same way Helm does.</p></div><div><img src=../images/Arch_1.svg alt="Hypper Architecture"></div></div><br><br><br><div class=grid-two><div><img src=../images/source-layout.svg alt="Hypper Source Layout"></div><div style=align-items:center;display:flex><p class=font-weight-light>Hypper is built on top of the Helm SDK.
-This enables it to take advantage of templates, chart repositories, provenance files (used for security), and more using the exact same code that Helm does.</p></div></div></section><section class=get-started><div class=white><h2 class=text-center>Get Started</h2><h3>1. Install Hypper</h3><p style=margin-bottom:40px><a class=btn href=https://github.com/rancher-sandbox/hypper/blob/main/docs/user/tutorials/installing.md>Install Hypper</a></p><h3>2. Add A Chart Repository</h3><pre><code>
+With Hypper you can start with Helm charts and layer in features as needed.
+</p>
+</section>
+<hr>
+<section class=wrap>
+<h2>Why Hypper?</h2>
+<div class=grid-three>
+<div>
+<h3>Built on Helm</h3>
+<p class=font-weight-light>Being built on the <a href=https://helm.sh/docs/topics/advanced/#go-sdk>Helm SDK</a>, Hypper inherits the functionality developed by upstream Helm. This means you can start with your existing charts and extend them for more features.</p>
+</div>
+<div>
+<h3>For Cluster Admins</h3>
+<p class=font-weight-light>Hypper directly targets features for cluster admins. This complements Helm which places cluster admin specific features as out of scope.</p>
+</div>
+<div>
+<h3>Curated Chart Repositories</h3>
+<p class=font-weight-light>You can create chart repositories with services designed to be managed separately while closely working together.</p>
+</div>
+</div>
+</section>
+<hr>
+<section class=wrap>
+<h2>How it Works</h2>
+<div class=grid-two>
+<div style=align-items:center;display:flex><p class=font-weight-light>Hypper installs each chart, including Hypper managed dependencies specified via annotations, with their own release record as an independent release.
+Hypper communicates with the Kubernetes API the same way Helm does.
+</p></div>
+<div><img src=../images/Arch_1.svg alt="Hypper Architecture"></div>
+</div>
+<br><br><br>
+<div class=grid-two>
+<div><img src=../images/source-layout.svg alt="Hypper Source Layout"></div>
+<div style=align-items:center;display:flex><p class=font-weight-light>Hypper is built on top of the Helm SDK.
+This enables it to take advantage of templates, chart repositories, provenance files (used for security), and more using the exact same code that Helm does.
+</p></div>
+</div>
+</section>
+<section class=get-started>
+<div class=white>
+<h2 class=text-center>Get Started</h2>
+<h3>1. Install Hypper</h3>
+<p style=margin-bottom:40px><a class=btn href=https://rancher-sandbox.github.io/hypper/user/tutorials/installing.html>Install Hypper</a></p>
+<h3>2. Add A Chart Repository</h3>
+<pre><code>
 $ hypper repo add hypper-charts https://rancher-sandbox.github.io/hypper-charts/repo
-    </code></pre><h3>3. Install A Service</h3><pre><code>
+    </code></pre>
+<h3>3. Install A Service</h3>
+<pre><code>
 $ hypper install hypper-charts/fleet --create-namespace
-    </code></pre><p>No release name is required. Hypper will discover the release name and namespace from the chart. You can learn more in the <a href=https://github.com/rancher-sandbox/hypper/blob/main/docs/user/tutorials/quickstart.md>quickstart guide</a>.</p></div><div class=bg-primary><div class=wrap></div></div></section></div></main><footer><p>&copy; 2021 <a href>hypper</a></p><div class=project-icons><a href=https://k3s.io target=blank><img src=../images/icon-k3s.svg height=20></a>
-<a href=https://k3os.io target=blank><img src=../images/icon-k3os.svg height=20></a>
-<a href=https://rio.io target=blank><img src=../images/icon-rio.svg height=20></a>
-<a href=https://submariner.io/ target=blank><img src=../images/icon-submariner.svg height=20></a></div></footer></body></html>
+    </code></pre>
+<p>No release name is required. Hypper will discover the release name and namespace from the chart. You can learn more in the <a href=https://rancher-sandbox.github.io/hypper/user/tutorials/quickstart.html>quickstart guide</a>.</p>
+</div>
+<div class=bg-primary>
+<div class=wrap>
+</div>
+</div>
+</section>
+</div>
+</main>
+<footer>
+<p>&copy; 2021 <a href>hypper</a></p>
+<div class=project-icons>
+<a href=https://k3s.io target=blank>
+<img src=../images/icon-k3s.svg height=20>
+</a>
+<a href=https://k3os.io target=blank>
+<img src=../images/icon-k3os.svg height=20>
+</a>
+<a href=https://rio.io target=blank>
+<img src=../images/icon-rio.svg height=20>
+</a>
+<a href=https://submariner.io/ target=blank>
+<img src=../images/icon-submariner.svg height=20>
+</a>
+</div>
+</footer>
+</body>
+</html>
