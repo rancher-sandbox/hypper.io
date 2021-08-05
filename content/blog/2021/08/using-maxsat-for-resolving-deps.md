@@ -1,4 +1,4 @@
-# Using a MaxSAT for resolving Hypper chart dependencies on Kubernetes
+# Hypper: using a MaxSAT for resolving chart dependencies on Kubernetes
 
 [Hypper](http://hypper.io) is a Kubernetes package manager based on Helm. It
 handles charts in a similar way as Helm does, with a twist: it tries to resolve
@@ -11,8 +11,8 @@ Hypper is designed to work with shared dependencies: dependencies installed once
 on a cluster that several charts depend on. Think of Hypper as bringing the
 usual Linux package management to Kubernetes Helm charts.
 
-Checking all the charts so see if their dependencies are correctly installed or
-there's some missing is not an easy task. This is called a "Satisfiability
+Checking all the charts to see if their dependencies are correctly installed or
+there are some missing is not an easy task. This is called a "Satisfiability
 problem", or SAT, for friends. In fact, solving a SAT problem it's an [NP-Complete
 problem](https://en.wikipedia.org/wiki/Boolean_satisfiability_problem#Unrestricted_satisfiability_(SAT))!.
 
@@ -33,7 +33,7 @@ system can be upgraded or not, regardless of our ability on curating the
 repositories. Hence, we use a SAT solver directly when performing those
 upgrades.
 
-## What kind of SAT solvers exist?
+## What kinds of SAT solvers exist?
 
 Let's walk through an example on the following paragraphs and see. We will use
 the example of installing `Wordpress` with a dependency to `Mariadb` (the names
