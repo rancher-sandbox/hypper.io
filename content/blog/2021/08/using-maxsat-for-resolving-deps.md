@@ -113,15 +113,21 @@ max( (Mariadb, version: 10.5.9,  weight: 1) +
 ## Why pick MaxSAT?
 
 In our case, we have several strategies we want to apply to our problem:
-- **Minimize package removal**.
-- **Minimize number of package charts**.
+- **Minimize package removal**. The changes to the cluster should be as minimal
+  as possible but as efficient as needed. This does not mean that we are going
+  to have stale deployments on our clusters, but that there will be no package
+  removals when an existing deployment still can fullfill the requirements.
+- **Minimize number of package charts**. The goal is to have as few deployments
+  on the cluster as needed without cluttering the cluster with unneeded deployments. 
 - **Maximize freshness of packages**. By assigning a distance between package
   versions, we can optimize for those that have the smaller distance. Doing a
   full upgrade of the system means selecting to maximize freshness of all
   installed packages, without asking for installing new packages by default (but
   allowing for packages to be pulled into the installed list).
-- **Minimize install of optional packages**.
-- **Maximize install of optional packages**.
+- **Minimize install of optional packages**. Only install the optional
+  dependencies users actually need, no one likes cluttered systems. 
+- **Maximize install of optional packages**. Install all optional dependencies, 
+  useful for test-systems.
 - **Minimize changes to installed packages**: Configuration changes in
   values.yaml, treat charts with K8s CRDs differently, etc.
   
