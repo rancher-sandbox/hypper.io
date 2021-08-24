@@ -13,13 +13,13 @@ usual Linux package management to Kubernetes Helm charts.
 
 Checking all the charts to see if their dependencies are correctly installed or
 there are some missing is not an easy task. This is called a "Satisfiability
-problem", or SAT, for friends. In fact, solving a SAT problem it's an [NP-Complete
+problem", or SAT, for friends. In fact, solving a SAT problem is an [NP-Complete
 problem](https://en.wikipedia.org/wiki/Boolean_satisfiability_problem#Unrestricted_satisfiability_(SAT))!.
 
 ## How to solve a SAT problem?
 
 Finding a solution to that problem may be somewhat easy by reducing the problem
-space (like Go modules), or using custom heuristics to be fast but without an
+space (like [Go modules](https://golang.org/ref/mod)), or using custom heuristics to be fast but without an
 assurance of finding an optimal solution (like Apt).
 
 To find an optimal solution to a SAT problem fast enough so it's useful to use,
