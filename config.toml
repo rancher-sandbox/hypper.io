@@ -3,6 +3,11 @@ languageCode = "en-us"
 theme = "projects-theme"
 title = "hypper"
 disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404"]
+googleAnalytics = 'UA-56382716-16'
+
+[privacy]
+  [privacy.googleAnalytics]
+    anonymizeIP = true
 
 [menu]
 
